@@ -3,7 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Chat Project</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
     <ui-view></ui-view>
@@ -29,9 +30,13 @@
       firebase.initializeApp(config);
     </script>
 
+    <!-- AngularUI Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
     <script src="/scripts/app.js"></script>
     <script src="/scripts/Room.js"></script>
     <script src="/scripts/controllers/HomeCtrl.js"></script>
+    <script src="/scripts/controllers/ModalCtrl.js"></script>
 
 </body>
 </html>
