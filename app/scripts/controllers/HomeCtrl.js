@@ -1,5 +1,5 @@
 (function () {
-    function HomeCtrl(Room, , Message, $uibModal) {
+    function HomeCtrl(Room, Message, $uibModal) {
         var home = this;
         this.rooms = Room.all;
         home.currentRoom = null;
