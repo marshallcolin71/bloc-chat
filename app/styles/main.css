@@ -1,5 +1,14 @@
-/*Sidebar*/
+/*General*/
+html {
+    height: 100%;
+    font-size: 100%;
+}
 
+body {
+    background-color: white;
+}
+
+/*Sidebar*/
 .new-room-button {
     border: 1px solid black;
     padding: 1rem;
@@ -28,4 +37,50 @@
 
 .room-name:hover {
     cursor: pointer;
+}
+
+/*Messages*/
+
+.messages {
+    position: fixed;
+    top: 0px;
+    left: 250px;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    overflow: scroll;
+}
+
+.messages-body {
+    padding-right: 10px;
+}
+
+.messages-body username {
+    font-weight: bold;
+}
+
+.messages-body .timestamp {
+    float: right;
+    padding-right: 100px;
+}
+
+.messages-body .username .timestamp {
+    display: inline-block;
+}
+
+.messages-body .user-message {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.message-field {
+    bottom: 0;
+    padding-bottom: 5px;
+    position: fixed;
+}
+
+.message-box {
+    width: 800px;
 }

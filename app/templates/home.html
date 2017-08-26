@@ -8,9 +8,16 @@
 
 <div class="chat-section">
     <h3 style="text-align:center;"> {{ home.currentRoom.name }} </h3>
+
     <div class="messages" ng-repeat="message in home.messages">
         <div class="username" style="text-align:center;"> {{ message.username }} </div>
-        <div class="timestamp" style="text-align:center;"> {{ message.sentAt }} </div>
+        <div class="timestamp" style="text-align:center;"> {{ message.sentAt | date : "shortTime" }} </div>
         <div class="user-message" style="text-align:center;"> {{message.content }} </div>
     </div>
+
+</div>
+
+<div class="message-field">
+    <input type="text" name="input" placeholder="Start Typing..." class="message-box" ng-model="home.newMessage.content" style="width:500px;">
+    <button class="btn-new-message" type="button" ng-click="home.sendMessage()"> Send Message </button>
 </div>

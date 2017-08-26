@@ -1,5 +1,16 @@
-<h3> Set a Username </h3>
-<p> Type in your desired username below </p>
+<div>
 
-<input type="text" ng-model="username.username"> </input>
-<button ng-click="username.setUsername()"> Submit </button>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Set Username</h4>
+      </div>
+
+      <div class="modal-body">
+        <p> Type in your desired username below </p>
+        <input type="text" ng-model="username.username"> </input>
+      </div>
+
+      <div class="modal-footer">
+        <button ng-click="username.setUsername()"> Submit </button>
+      </div>
+</div>
