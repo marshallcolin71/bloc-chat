@@ -52,33 +52,42 @@ body {
     overflow: scroll;
 }
 
-.messages-body {
+.message {
     padding-right: 10px;
 }
 
-.messages-body username {
+.message .username {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.messages-body .timestamp {
+.message .timestamp {
     float: right;
     padding-right: 100px;
 }
 
-.messages-body .username .timestamp {
+.message .username, .message .timestamp, .message .user-message {
     display: inline-block;
 }
 
-.messages-body .user-message {
+.message .user-message {
     padding-top: 5px;
     padding-bottom: 5px;
     display: inline-block;
+    width: 100%;
+
 }
+
+.message {
+  border-bottom: solid 1px black;
+}
+
 
 .message-field {
     bottom: 0;
     padding-bottom: 5px;
     position: fixed;
+    z-index: 2;
 }
 
 .message-box {
